@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DATA LAWU NUSANTARA - Input Tugas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">DATA LAWU NUSANTARA</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Input Tugas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tasks.html">Daftar Tugas</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h1 class="mb-4 text-center text-info">DATA LAWU NUSANTARA - Input Tugas</h1>
+
+        <!-- Form untuk Membagi Tugas -->
+        <div class="card border-primary mb-3">
+            <div class="card-header bg-primary text-white">
+                <h5>Bagikan Tugas</h5>
+            </div>
+            <div class="card-body">
+                <form id="taskForm">
+                    <input type="hidden" id="taskId">
+                    <div class="form-group">
+                        <label for="technicianName">Nama Teknisi</label>
+                        <input type="text" class="form-control" id="technicianName" placeholder="Masukkan nama teknisi" required>
+                    </div>
+
+                    <!-- Kolom-kolom dinamis -->
+                    <div id="dynamicFields" class="dynamic-fields">
+                        <!-- Kolom tambahan akan dimasukkan di sini -->
+                    </div>
+
+                    <button type="button" class="btn btn-secondary" id="addColumnBtn">Tambah Kolom</button>
+                    <button type="submit" class="btn btn-primary" id="submitBtn">Bagikan Tugas</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer mt-auto py-3 bg-dark text-light">
+        <div class="container text-center">
+            <span>Website ini dibuat oleh <a href="https://www.instagram.com/chaevanss_" target="_blank" class="footer-link">Chaevanss_</a>.</span>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <!-- Firebase Authentication -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <!-- Firebase Firestore -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+    <script src="input-tugas.js" defer></script>
+
+</body>
+</html>
